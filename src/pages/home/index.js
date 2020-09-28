@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react"
-import "antd/dist/antd.css"
-import styles from "./index.less"
+import "antd/es/menu/style/index.css"
+
 import { Menu } from "antd"
 import {
   MailOutlined,
@@ -19,16 +19,12 @@ export default function Home() {
     <Fragment>
       <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
         <Menu.Item key="mail" icon={<MailOutlined />}>
-          Navigation One
+          CSS
         </Menu.Item>
-        <Menu.Item key="app" disabled icon={<AppstoreOutlined />}>
-          Navigation Two
+        <Menu.Item key="app" icon={<AppstoreOutlined />}>
+          HTML
         </Menu.Item>
-        <SubMenu
-          key="SubMenu"
-          icon={<SettingOutlined />}
-          title="Navigation Three - Submenu"
-        >
+        <SubMenu key="SubMenu" icon={<SettingOutlined />} title="ES全集">
           <Menu.ItemGroup title="Item 1">
             <Menu.Item key="setting:1">Option 1</Menu.Item>
             <Menu.Item key="setting:2">Option 2</Menu.Item>
@@ -38,15 +34,6 @@ export default function Home() {
             <Menu.Item key="setting:4">Option 4</Menu.Item>
           </Menu.ItemGroup>
         </SubMenu>
-        <Menu.Item key="alipay">
-          <a
-            href="https://ant.design"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Navigation Four - Link
-          </a>
-        </Menu.Item>
       </Menu>
     </Fragment>
   )

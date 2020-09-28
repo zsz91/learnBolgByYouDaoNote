@@ -6,5 +6,5 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-less`],
+  plugins: [`gatsby-plugin-less`, "gatsby-plugin-mdx"],
 }
